@@ -58,7 +58,10 @@ export const RURComponent: React.FC<RURComponentProps> = props => {
                             <DatePicker onChange={(e) => props.getDate(e)} />
                         </div>
                         <div style={{ margin: 5 }}>
-                            <span>Курс RUR {props.rur ? props.rur.Cur_OfficialRate : '-----'} на дату: {props.rur ? new Date(props.rur.Date).toLocaleDateString() : '-----'}</span>
+                            <span>
+                                Курс RUR {props.rur ? props.rur.Cur_OfficialRate : '-----'}
+                                на дату: {props.rur ? new Date(props.rur.Date).toLocaleDateString() : '-----'}
+                            </span>
                         </div>
                         <div>
                             <div style={{ margin: 5 }} className={style.dateblock}>
